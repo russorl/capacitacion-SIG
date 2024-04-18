@@ -30,7 +30,7 @@ Raster son set de datos continuos (a diferencia de los vectores que son discreto
 
 ![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/b4383c9d-a76b-462c-a6c7-9a73168b787a)
 
-  
+Imagenes Visibles
 
 ![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/c5552715-5e78-492e-a869-56abbd5acdf9)
 
@@ -47,5 +47,19 @@ En escencia vamos a utilizar una herramienta para administrar, procesar, almacen
 
 Componente geográfica son pares de coordenadas.
 
+![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/a803d3e2-a3fe-4aee-a70d-d94e689fd6c2)
 
+Ejemplos de presentación de estas coordenadas:
+Las coordenadas geográficas se expresan tradicionalmente en el sistema sexagesimal: grados (°) minutos (’) segundos (’’)
+Dependiendo del signo puede aparecer una letra que indica el hemisferio N, S o E, O(W)
+27° 2' 31" S, 55° 14' 4" O  ó  -27° 2' 31", -55° 14' 4"
+-27.04182432, -55.23433301
+
+Menos usadas:
+27° 2.5095' S, 55° 14.0600' W
+270231S, 0551404W
+
+Con este tipo de representacion (esférica) es complejo realizar ciertos análisis de superficie 
+
+7009101.30, 7377526.17
 
