@@ -10,6 +10,7 @@ Material de apoyo para capacitación en SIG con QGis
 Los datos pueden tener tres formatos, Raster, Vectorial y Tabular;
 
 El formato vectorial a la vez admite tres posibilidades: puntos, líneas o polígonos.
+
 Los puntos representan ubicaciones del tipo ciudades, personas, sucursales, avistamiento, incidente, toma de muestra, etc.
 Las líneas representan recorridos, como los ríos, las rutas o un caño de agua, etc.
 Los polígonos, por su parte representan áreas como parcelas, provincias, o zonas de distribución de un individuo, ANP, etc.
