@@ -30,7 +30,7 @@ Raster son set de datos continuos (a diferencia de los vectores que son discreto
 
 ![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/b4383c9d-a76b-462c-a6c7-9a73168b787a)
 
-
+  
 
 ![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/c5552715-5e78-492e-a869-56abbd5acdf9)
 
