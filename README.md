@@ -11,9 +11,9 @@ Los datos pueden tener tres formatos, Raster, Vectorial y Tabular;
 
 El formato vectorial a la vez admite tres posibilidades: puntos, líneas o polígonos.
 
-Los puntos representan ubicaciones del tipo ciudades, personas, sucursales, avistamiento, incidente, toma de muestra, etc.
-Las líneas representan recorridos, como los ríos, las rutas o un caño de agua, etc.
-Los polígonos, por su parte representan áreas como parcelas, provincias, o zonas de distribución de un individuo, ANP, etc.
+* Los puntos representan ubicaciones del tipo ciudades, personas, sucursales, avistamiento, incidente, toma de muestra, etc.
+* Las líneas representan recorridos, como los ríos, las rutas o un caño de agua, etc.
+* Los polígonos, por su parte representan áreas como parcelas, provincias, o zonas de distribución de un individuo, ANP, etc.
 
 ![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/5d20e959-dd21-461e-ba5a-8a01fd588306)
 
