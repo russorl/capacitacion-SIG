@@ -52,12 +52,12 @@ Componente geográfica son pares de coordenadas.
 Ejemplos de presentación de estas coordenadas:
 Las coordenadas geográficas se expresan tradicionalmente en el sistema sexagesimal: grados (°) minutos (’) segundos (’’)
 Dependiendo del signo puede aparecer una letra que indica el hemisferio N, S o E, O(W)
-27° 2' 31" S, 55° 14' 4" O  ó  -27° 2' 31", -55° 14' 4"
--27.04182432, -55.23433301
+- 27° 2' 31" S, 55° 14' 4" O  ó  -27° 2' 31", -55° 14' 4"
+- -27.04182432, -55.23433301
 
 Menos usadas:
-27° 2.5095' S, 55° 14.0600' W
-270231S, 0551404W
+- 27° 2.5095' S, 55° 14.0600' W
+- 270231S, 0551404W
 
 Con este tipo de representacion (esférica) es complejo realizar ciertos análisis de superficie 
 
