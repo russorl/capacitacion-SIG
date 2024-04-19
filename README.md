@@ -59,7 +59,24 @@ Menos usadas:
 - 27° 2.5095' S, 55° 14.0600' W
 - 270231S, 0551404W
 
-Con este tipo de representacion (esférica) es complejo realizar ciertos análisis de superficie 
+Con este tipo de representación (esférica) es complejo realizar ciertos análisis como por ejemplo de superficies o distancias, para solucionar (en parte) esto existen las proyecciones cartográficas, que utilizan modelos matemáticos para representar la tierra y luego asignar coordenadas en X e Y (generalmente en metros) a estos planos teóricos
 
-7009101.30, 7377526.17
+- 7009101.30, 7377526.17  - Proyección POSGAR 98 / Argentina 7
+
+Propiedades
+- Unidades: metros
+- Statica (depende de un datum(modelo) fijo a un plano)
+- Cuerpo que representa: Tierra
+- Método: Transverse Mercator
+
+![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/74a49139-2b39-42f4-9611-12f374b854f7)
+
+Deformaciones
+
+![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/b6dd12c3-8650-4989-874a-2390a35d241c)
+
+Primer Vistazo!!
+
+![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/d9232513-b9cf-445c-8459-ccd11816ed04)
+
 
