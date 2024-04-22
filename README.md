@@ -80,3 +80,125 @@ Primer Vistazo!!
 ![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/d9232513-b9cf-445c-8459-ccd11816ed04)
 
 
+# Métodos de creación de datos
+
+Partiendo de lo que charlamos la vez anterior respecto a que los SIG necesitan datos y nos ayudan a administrarlos vamos a ver que existen muchos set de datos disponibles (lo vamos a ver en detalle más adelante), sin embargo, a medida que nuestro campo de trabajo ó proyecto es más específico vamos a tener que crear nuestros propios datos, ni hablar si estamos haciendo un relevamiento.
+
+## Fotointerpretación
+
+Con una imagen de base (raster) digitalizamos lo que podemos ver sobre la misma, para ello con anterioridad necesitamos detenernos y decidir que capa vamos a construir para optar por un lado puntos, lineas o poligonos (no se pueden mezclar dentro de una capa) y por otro lado sus atributos decidiendo para cada uno de ellos el tipo de dato.
+
+Cuadro de diálogo de Creación de Capas
+Antes de poder añadir nuevos datos vectoriales, necesitas un conjunto de datos vectoriales al queañadirlos. En nuestro caso, empezarás creando nuevos datos por completo, en lugar de editar unconjunto de datos existente. Además, necesitarás definir de antemano tu propio conjunto de datosnuevo.
+
+*	Navega y haz clic en la entrada del menú Capa ‣Crear Capa‣ Nueva capa de archivo shape.
+ 
+![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/fc364b5e-f122-4d9d-9c94-3d9a3b6d3a3d)
+
+Se presentará el siguiente cuadro de diálogo:
+
+![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/16fcabfb-28cb-4e05-b6d5-abb73d6194f4)
+
+Haz clic en el botón “…” (puntossuspensivos) al final de “Nombre de archivo” y navega al directorio del proyecto o donde lo desees almacenar en el disco y dale un nombre representativo. Con esto listo, haz clic en Guardar.
+
+
+Es importante decidir qué tipo de conjunto de datos quieres en este punto. Cada tipo de capa vectorialesta “construido de forma diferente” en sus bases, así que una vez hayas creado la capa, no puedescambiar su tipo.
+
+
+Para el ejemplo, crearemos nuevas características para describir áreas. Para estascaracterísticas, necesitarás crear un conjunto de datos poligonal.
+*	Haz clic en Tipo de Geometría y elegiremos la opción Polígono
+El siguiente campo te permite especificar el Sistema de Referencia de Coordenadas, o SRC. Un SRCespecifica la descripción de un punto en la Tierra en términos de coordenadas, y como hay muchasformas de hacer esto, hay muchos SRC diferentes. El SRC de este proyecto es WGS84, así que es elcorrecto por defecto.
+
+![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/b116c06c-2ad3-4ea1-a4ae-0af99fdbf40e)
+
+A continuación hay una colección de campos agrupados en Nuevo atributo. Por defecto una capa tienesolo un atributo, el campo id (que deberías ver en Lista de atributos) inferior. Sin embargo, para quelos datos que crees sean útiles, necesitas decir algo sobre las características que crearás en la nuevacapa. Para tus propósitos actuales, será suficiente añadir un campo llamado nombre.
+
+Replica la configuración siguiente, luego haz clic en el botón Añadir a la lista de atributos.
+
+![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/7a8665aa-ba83-4017-ab81-5a1cce2a27b8)
+
+De este modo puedes agregar los atributos que creas necesarios que tenga esta nueva capa y luego al ir insertando objetos se deberán completar con información.
+Nota: Existen ciertas restricciones específicas para las tablas de atributos de los archivos Shape file: Los nombres de los campos no pueden tener más de 10 caracteres, y no pueden comenzar con un número o espacio vacío. Solo se pueden elegir entre los Tipos de dato: Entero o Integer, Decimal o Double, Fecha o Date y Datos de texto / Cadena de texto o String, donde para este ultimo la longitud máxima es de 255 caracteres. 
+
+Haz clic en Aceptar. Y la nueva capa quedará agregada al proyecto, pero aún sin objetos.
+
+### EDICIÓN
+
+Para empezar a digitalizar, necesitarás introducir modo de edición. Los softwares SIG normalmente lorequieren para prevenir que edites o borres accidentalmente datos importantes. El modo edición seactiva o desactiva individualmente para cada capa.
+Para introducir el modo edición para la capa nueva (o la que se desee):
+*	Haz clic en la capa en la Lista de capas para seleccionarla(Asegúrate que seleccionas la capa correcta, ¡de lo contrario editarás la capa incorrecta!).
+*	Haz clic en el botón Conmutar edición (Lápiz)  
+
+Si no puedes encontrar ese botón, comprueba que la barra de herramientas Digitalización estáactivada. Debería haber un marcador junto a la entrada del menú Ver ‣ Barras de herramientas ‣ Digitalización
+
+![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/6b06937b-70af-4e22-82b1-50d1f959b350)
+
+Tan pronto como estés en el modo edición, verás que las herramientas de digitalización están ahoraactivadas (dependiendo del tipo de geometría):
+
+![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/22b175ff-ac95-46c5-8e1d-a8f209b32d63)
+
+Otros cuatro botones relevantes todavía están desactivados, pero se activarán cuando empecemos ainteractuar con nuestros nuevos datos:
+
+![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/589a7023-4d4f-4b4d-8fe6-1db75995b297)
+
+En la barra de herramientas, están:
+•	Guardar cambios de la capa: Guarda cambios hechos en la capa.
+•	Añadir objeto espacial: Comienza a digitalizar un nuevo elemento.
+•	Mover objeto(s) espacial(es): Mueve un elemento completo
+•	Herramienta de nodos: Mueve solo una parte de un elemento
+•	Borrar lo seleccionado: Borra el elemento seleccionado.
+•	Cortar objetos espaciales: Corta el elemento seleccionado.
+•	Copiar objetos espaciales: Copia el elemento seleccionado.
+•	Pegar objetos espaciales: Pega de nuevo un elemento cortado o copiado en el mapa.
+
+Para añadir un elemento nuevo:
+1.	Haz clic en el botón Añadir objeto espacial para empezar a digitalizar en la capa o el Shape que hayas activado el modo edición y que este seleccionado en el Panel de Capas.
+2.	Notarás que el cursor del ratón se ha convertido en una cruz. Esto te permite situar de forma precisa los puntos que digitalizarás. Recuerda que incluso si estas usando la herramienta de digitalización, puedes ampliar o disminuir el zoom en tu mapa con la rueda de tu ratón, y puedes desplazarte manteniendo pulsada la rueda del ratón y arrastrando el mapa.
+3.	Empieza a digitalizar clicando en un punto en el mapa.
+4.	En el caso de tipo líneas o polígonos sitúa más puntos clicando puntos adicionales en el mapa, hasta que la forma que estés dibujando cubra completamente la forma que busca.
+5.	Después de situar el último punto, clic derecho para acabar de dibujar el polígono o línea. Esto finalizará el elemento y te mostrará el cuadro de diálogo Atributos.
+6.	Completa los valores para cada atributo de la tabla.
+
+![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/09e2d8ac-bcf7-485e-83b5-bc83eb7310e4)
+
+Veremos 
+
+![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/a061353f-82cb-4919-9873-d997a28463ea)
+
+Al completar y Aceptar
+
+![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/a1e55ad6-e3f1-4574-8d95-f7db359ebea7)
+
+Para finalizar volvemos a clicar en el lapiz para conmutar la edición.
+
+## Relevamiento con equipos GPS
+
+Con todos los dispositivos GPS especificos y similares, como por ejemplo, celulares con aplicaciones como OSMAnd, podemos generara esta información directamente en terreno, claramente poniendo mayor enfasis y foco en la componente geográfica con menor fuerza en los atributos pero esto lo supliremos en gabinete.
+
+El QGis levanta los archivos GPX generados con estos dispositivos un app's 
+
+OSMAnd - PlayStore
+
+![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/4849caed-90fd-4a0e-a483-598d89ac1e38)
+
+Captura de datos
+
+![Screenshot_20240422-175501](https://github.com/russorl/capacitacion-SIG/assets/6954564/02674a7a-c5c0-433c-93d4-6f6f53c46020)
+
+Bajar o compartir archivos GPX - Veamos ejemplos.
+
+## Relevamiento x otros métodos 
+
+El relevamiento más simple que podriamos hacer con móviles es tomar fotografías con la ubicación activada: de este modo podemos copiar las fotos de terreno al equipo y generar la capa de ubicación automáticamente a partir de las coordenadas enbebidas.
+
+Buscamos entre las herramientas el proceso de "Importar fotos geoetiquetadas"
+
+![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/38908bae-c69b-49f8-bee7-bccec78a4b1e)
+
+En la ventana 
+
+![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/002ccefe-5da2-43c7-bc2b-e7a7699f6d79)
+
+* Especificaremos la carpeta donde tenemos las fotos clicando en "..." (tres puntos) 
+*  o especificar donde queremos q (también podemos dejar dejar así y crear como capas temporales)
+*  Por último algunas configuraciones extra para aprovechar las fotos y ya!!! Veamos ejemplos.
