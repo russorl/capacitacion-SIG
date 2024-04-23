@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<gpx version="1.1" creator="OsmAndRouterV2" xmlns="http://www.topografix.com/GPX/1/1" xmlns:osmand="https://osmand.net" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+  <metadata>
+    <name>Mon 22 Apr 2024</name>
+  </metadata>
+  <trk>
+    <name>Mon 22 Apr 2024</name>
+    <trkseg>
+      <trkpt lat="-27.4048324" lon="-55.9950487">
+        <extensions />
+      </trkpt>
+      <trkpt lat="-27.4079331" lon="-55.9839063">
+        <extensions />
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

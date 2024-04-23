@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<gpx version="1.1" creator="OsmAnd 4.7.10" xmlns="http://www.topografix.com/GPX/1/1" xmlns:osmand="https://osmand.net" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+  <metadata>
+    <name>Markers_2024-04-22</name>
+    <time>2024-04-22T19:02:20Z</time>
+  </metadata>
+  <wpt lat="-27.405652" lon="-55.9953511">
+    <time>2024-04-22T19:02:35Z</time>
+    <name>Escuela 960</name>
+    <extensions>
+      <osmand:color>#73b825</osmand:color>
+    </extensions>
+  </wpt>
+  <wpt lat="-27.4060717" lon="-55.9957314">
+    <time>2024-04-22T19:03:25Z</time>
+    <name>Los Lirios (Itaembé Guazú Sector 2), Itaembé Guazú</name>
+    <extensions>
+      <osmand:color>#ff9800</osmand:color>
+    </extensions>
+  </wpt>
+  <wpt lat="-27.4050607" lon="-55.9959248">
+    <time>2024-04-22T19:02:20Z</time>
+    <name>Mi ubicación</name>
+    <extensions>
+      <osmand:color>#2196f3</osmand:color>
+    </extensions>
+  </wpt>
+  <extensions>
+    <osmand:show_arrows>false</osmand:show_arrows>
+    <osmand:show_start_finish>true</osmand:show_start_finish>
+    <osmand:split_interval>0.0</osmand:split_interval>
+    <osmand:split_type>no_split</osmand:split_type>
+    <osmand:points_groups>
+      <group name="" color="#73b825" />
+    </osmand:points_groups>
+  </extensions>
+</gpx>
