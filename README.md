@@ -89,7 +89,7 @@ Partiendo de lo que charlamos la vez anterior respecto a que los SIG necesitan d
 Con una imagen de base (raster) digitalizamos lo que podemos ver sobre la misma, para ello con anterioridad necesitamos detenernos y decidir que capa vamos a construir para optar por un lado puntos, lineas o poligonos (no se pueden mezclar dentro de una capa) y por otro lado sus atributos decidiendo para cada uno de ellos el tipo de dato.
 
 Cuadro de diálogo de Creación de Capas
-Antes de poder añadir nuevos datos vectoriales, necesitas un conjunto de datos vectoriales al queañadirlos. En nuestro caso, empezarás creando nuevos datos por completo, en lugar de editar unconjunto de datos existente. Además, necesitarás definir de antemano tu propio conjunto de datosnuevo.
+Antes de poder añadir nuevos datos vectoriales, necesitas un conjunto de datos vectoriales al que añadirlos. En este ejmplo, empezarás creando nuevos datos por completo, en lugar de editar un conjunto de datos existente. Además, necesitarás definir de antemano tu propio conjunto de datos nuevo.
 
 *	Navega y haz clic en la entrada del menú Capa ‣Crear Capa‣ Nueva capa de archivo shape.
  
@@ -99,45 +99,45 @@ Se presentará el siguiente cuadro de diálogo:
 
 ![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/16fcabfb-28cb-4e05-b6d5-abb73d6194f4)
 
-Haz clic en el botón “…” (puntossuspensivos) al final de “Nombre de archivo” y navega al directorio del proyecto o donde lo desees almacenar en el disco y dale un nombre representativo. Con esto listo, haz clic en Guardar.
+Haz clic en el botón “…” (puntos suspensivos) al final de “Nombre de archivo” y navega al directorio del proyecto o donde lo desees almacenar en el disco y dale un nombre representativo. Con esto listo, haz clic en Guardar.
 
 
 Es importante decidir qué tipo de conjunto de datos quieres en este punto. Cada tipo de capa vectorialesta “construido de forma diferente” en sus bases, así que una vez hayas creado la capa, no puedescambiar su tipo.
 
 
-Para el ejemplo, crearemos nuevas características para describir áreas. Para estascaracterísticas, necesitarás crear un conjunto de datos poligonal.
+Para el ejemplo, crearemos nuevas características para describir áreas. Para estas características, necesitarás crear un conjunto de datos poligonal.
 *	Haz clic en Tipo de Geometría y elegiremos la opción Polígono
-El siguiente campo te permite especificar el Sistema de Referencia de Coordenadas, o SRC. Un SRCespecifica la descripción de un punto en la Tierra en términos de coordenadas, y como hay muchasformas de hacer esto, hay muchos SRC diferentes. El SRC de este proyecto es WGS84, así que es elcorrecto por defecto.
+El siguiente campo te permite especificar el Sistema de Referencia de Coordenadas, o SRC. (Un SRC especifica la descripción de un punto en la Tierra en términos de coordenadas, y como hay muchas formas de hacer esto, hay muchos SRC diferentes. Para el SRC de este proyecto de ejemplo usemos el más general que es WGS84, así que es el correcto por defecto.)
 
 ![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/b116c06c-2ad3-4ea1-a4ae-0af99fdbf40e)
 
-A continuación hay una colección de campos agrupados en Nuevo atributo. Por defecto una capa tienesolo un atributo, el campo id (que deberías ver en Lista de atributos) inferior. Sin embargo, para quelos datos que crees sean útiles, necesitas decir algo sobre las características que crearás en la nuevacapa. Para tus propósitos actuales, será suficiente añadir un campo llamado nombre.
+A continuación hay una colección de campos agrupados en Nuevo atributo. Por defecto una capa tiene solo un atributo, el campo id (que deberías ver en Lista de atributos) inferior. Sin embargo, para que los datos que crees sean útiles, necesitas decir algo sobre las características que crearás en la nueva capa. Para tus propósitos actuales, será suficiente añadir un campo llamado nombre.
 
 Replica la configuración siguiente, luego haz clic en el botón Añadir a la lista de atributos.
 
 ![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/7a8665aa-ba83-4017-ab81-5a1cce2a27b8)
 
 De este modo puedes agregar los atributos que creas necesarios que tenga esta nueva capa y luego al ir insertando objetos se deberán completar con información.
-Nota: Existen ciertas restricciones específicas para las tablas de atributos de los archivos Shape file: Los nombres de los campos no pueden tener más de 10 caracteres, y no pueden comenzar con un número o espacio vacío. Solo se pueden elegir entre los Tipos de dato: Entero o Integer, Decimal o Double, Fecha o Date y Datos de texto / Cadena de texto o String, donde para este ultimo la longitud máxima es de 255 caracteres. 
+Nota: Existen ciertas restricciones específicas para las tablas de atributos de los archivos Shape file: Los nombres de los campos no pueden tener más de 10 caracteres, y no pueden comenzar con un número o espacio vacío. Solo se pueden elegir entre los Tipos de dato: Entero o Integer, Decimal o Double, Fecha o Date y Datos de texto / Cadena de texto o String, donde para este último la longitud máxima es de 255 caracteres. 
 
 Haz clic en Aceptar. Y la nueva capa quedará agregada al proyecto, pero aún sin objetos.
 
 ### EDICIÓN
 
-Para empezar a digitalizar, necesitarás introducir modo de edición. Los softwares SIG normalmente lorequieren para prevenir que edites o borres accidentalmente datos importantes. El modo edición seactiva o desactiva individualmente para cada capa.
+Para empezar a digitalizar, necesitarás introducir modo de edición. Los softwares SIG normalmente lo requieren para prevenir que edites o borres accidentalmente datos importantes. El modo edición se activa o desactiva individualmente para cada capa.
 Para introducir el modo edición para la capa nueva (o la que se desee):
-*	Haz clic en la capa en la Lista de capas para seleccionarla(Asegúrate que seleccionas la capa correcta, ¡de lo contrario editarás la capa incorrecta!).
+*	Haz clic en la capa en la Lista de capas para seleccionarla (Asegúrate que seleccionas la capa correcta, ¡de lo contrario editarás la capa incorrecta!).
 *	Haz clic en el botón Conmutar edición (Lápiz)  
 
-Si no puedes encontrar ese botón, comprueba que la barra de herramientas Digitalización estáactivada. Debería haber un marcador junto a la entrada del menú Ver ‣ Barras de herramientas ‣ Digitalización
+Si no puedes encontrar ese botón, comprueba que la barra de herramientas Digitalización está activada. Debería haber un marcador junto a la entrada del menú Ver ‣ Barras de herramientas ‣ Digitalización
 
 ![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/6b06937b-70af-4e22-82b1-50d1f959b350)
 
-Tan pronto como estés en el modo edición, verás que las herramientas de digitalización están ahoraactivadas (dependiendo del tipo de geometría):
+Tan pronto como estés en el modo edición, verás que las herramientas de digitalización están ahora activadas (dependiendo del tipo de geometría):
 
 ![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/22b175ff-ac95-46c5-8e1d-a8f209b32d63)
 
-Otros cuatro botones relevantes todavía están desactivados, pero se activarán cuando empecemos ainteractuar con nuestros nuevos datos:
+Otros cuatro botones relevantes todavía están desactivados, pero se activarán cuando empecemos a interactuar con nuestros nuevos datos:
 
 ![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/589a7023-4d4f-4b4d-8fe6-1db75995b297)
 
@@ -169,7 +169,7 @@ Al completar y Aceptar
 
 ![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/a1e55ad6-e3f1-4574-8d95-f7db359ebea7)
 
-Para finalizar volvemos a clicar en el lapiz para conmutar la edición.
+Para finalizar volvemos a clicar en el lapiz para conmutar la edición y no nos olvidemos de grabar!!!.
 
 ## Relevamiento con equipos GPS
 
@@ -202,3 +202,12 @@ En la ventana
 * Especificaremos la carpeta donde tenemos las fotos clicando en "..." (tres puntos) 
 *  o especificar donde queremos q (también podemos dejar dejar así y crear como capas temporales)
 *  Por último algunas configuraciones extra para aprovechar las fotos y ya!!! Veamos ejemplos.
+
+  Otros conocidos:
+  * Epicollect5: Tipo formularios de encuesta, se pueden configurar por proyecto y también tiene una app de recoleccion que funciona con o sin conectividad.
+  * KoboToolBox: Tipo formularios (pero más complejo de configurar y con más tipos de datos), se pueden configurar por proyecto y también tiene una app de recoleccion.
+  * GoogleMaps: Permite generar capas para descargar en KML (puede ser engorroso el manejo de atributos y problemas de precision al marcar puntos)
+  * QField: App desarrollada para compatibilidad con QGis, uso sin conectividad, no es tan simple de manejar en terreno y menos en dispositivos de pantalla pequeña.
+  * SMART Conservation Software - Herramienta de seguimiento espacial y elaboración de informes (smartconservationtools.org) - (Por Investigar aún)
+  * iNaturalist - Podra servir como herramienta de recolección de datos ?? 
+
