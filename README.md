@@ -211,3 +211,103 @@ En la ventana
   * SMART Conservation Software - Herramienta de seguimiento espacial y elaboración de informes (smartconservationtools.org) - (Por Investigar aún)
   * iNaturalist - Podra servir como herramienta de recolección de datos ?? 
 
+### VISUALIZACIÓN
+
+## Utilizando etiquetas
+
+Antes de ser capaz de acceder a la herramienta de Etiquetas, necesitarás asegurarte de que está activada.
+
+*	Ves al elemento del menú "Ver" ‣ "Barra de Herramientas".
+*	Asegúrate de que el elemento "Etiqueta" está marcado. Si no lo está, haz clic en el elemento "Etiqueta" y se activará.
+*	Haz clic en la capa LOCALIDADES_COMPLETAS en la Lista de capas, para que quede resaltado.
+*	Haga clic en el siguiente botón de la barra de herramientas:  ![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/0322b6a0-ade3-40dc-b6e7-49645eb77ec1)
+Esto te abrirá el cuadro de diálogo "Configuración del etiquetado de la capa".
+*	Debemos elegir el la lista desplegable "Etiqueta sencilla".
+Necesitarás elegir el campo de atributos que será utilizado en las etiquetas. En este caso elige el campo "NOMBRES".
+*	Selecciona "NOMBRES" de la lista:
+
+![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/7bb86c11-7e4e-4415-9895-a8df36ba956a)
+
+* Clic en Aceptar.
+* El mapa debería tener ahora etiquetas como éstas:
+
+![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/15e16185-0b5d-4ac5-9bf4-22bc2d1657ce)
+
+## Cambiando opciones de etiquetado
+Dependiendo de los estilos que elegiste para tu mapa en las lecciones anteriores, puede que encuentres que las etiquetas no tienen el formato apropiado y se solapan o están demasiado lejos de sus puntos marcadores.
+*	Abre la Herramienta de etiquetado de nuevo haciendo clic en su botón como antes.
+*	Asegúrese de que "Texto" está seleccionado en la lista de opciones del lado izquierdo, después, actualice las opciones de formato de texto para que coincida con lo que se muestra aquí:
+
+![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/ebb97d0a-b597-4ecb-8dad-0084467664ff)
+
+¡El problema de fuente está resuelto! Ahora nos dirigimos al problema con las etiquetas solapadas con los puntos, pero antes de hacer esto, echemos un vistazo a la opción Margen.
+
+*	Abre el cuadro de diálogo "Herramienta de etiquetado".
+*	Selecciona "Buffer" de la lista de opciones de la izquierda.
+*	Seleccione la casilla de verificación junto a Dibujar buffer de texto, después elija las opciones para que coincida con los que se muestran aquí:
+
+![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/830ca352-6653-4f82-b230-77db81bd6d3c)
+
+*	Haz clic en Aplicar.
+
+Ahora podemos situar la posición de las etiquetas en relación con sus puntos marcadores.
+
+*	En el cuadro de diálogo Herramienta de etiquetado, ve a la pestaña "Ubicación".
+*	Cambie el valor de "Distancia a 2mm" y cerciórese que "Alrededor del punto" este seleccionado
+
+![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/90cca6fc-4bbc-4cff-9a14-992e1a2a67a4)
+
+## Clasificación
+La simbología nos permite representar los atributos de una capa de una forma sencilla de entender. También permite a los que visualicen el mapa entender el significado de las características, utilizando atributos relevantes que hemos escogido. Dependiendo del problema al que te enfrentes, aplicarás diferentes técnicas de clasificación para resolverlos:
+
+### Clasificación de Datos. Símbolo único
+*	Agregar la capa LIMITES_MUNICIPIOS_MISIONES
+*	Abrir el cuadro de diálogo Propiedades de la Capa para la capa LIMITES_MUNICIPIOS_MISIONES
+*	Ir a la pestaña Simbología.
+
+![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/002a11f0-6a95-4bb7-81b0-cb2a54c27572)
+
+### Clasificación de Datos. Categorizado
+
+Haga clic sobre la lista desplegable que dice Categorizado: y configurar, el valor (poner nombre del campo por el cual quiero que se me categorice). En rampa de colores elegir cual quiero y mejor represente el valor del campo elegido
+
+![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/a098aadc-bd18-458a-b008-9d5316523be1)
+
+Hacer clic en "Clasificar" y vemos como el mapa ha adquirido, la simbología configurada.
+Cualquier atributo que no quiero que salga representado en el mapa, lo puedo eliminar, seleccionándolo y eliminándolo desde el signo "menos". Igualmente si quiero agregar uno, clic en el signo "más" y si quiero borrar toda la clasificación darle clic en "borrar todo".
+
+### Clasificación de Datos. Graduado
+La simbolización graduada de una capa, generalmente se desarrolla a partir de sus atributos numéricos.
+
+Es la representación de una variable continua que permite agrupar los elementos de una capa en intervalos o rangos numéricos y representar gráficamente cada rango de forma diferente (icono, tamaño, color, borde, entre otros).
+
+Se calcula a partir de los valores contenidos en una columna de atributos numérica.
+
+El estilo graduado puede calcularse a partir de los siguientes métodos estadísticos:
+
+* Intervalos iguales, para la capa LIMITES MUNICIPIOS_MNES: divide el conjunto de valores entre el número de clases deseadas.
+* Valor: TOT_POBLAC
+* Rampa de color: elegir el que mejor represente los atributos del campo.
+* Modo: Intervalo igual 
+* Clases: probar con 5, 10 o más.
+* Dar clic en clasificar.
+
+![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/db206713-66c7-48c1-a256-ee8d4b05ec49)
+
+Se pueden cambiar varios métodos estadísticos o también se puede setear de forma particular, haciendo click en los valores:
+
+![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/637027f5-bb16-42b3-b6ad-1db847e78b8e)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
