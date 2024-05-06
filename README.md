@@ -298,8 +298,48 @@ Se pueden cambiar varios métodos estadísticos o también se puede setear de fo
 
 ![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/637027f5-bb16-42b3-b6ad-1db847e78b8e)
 
+### Clasificación de Datos. Puntos
+La simbolización en los objetos tipo punto cuenta con algunos estilos especificos para clasificar como ser graduación de tamaño y el mapa de calor.
+
+### Graduación de tamaño
+En las propiedades de Simbología de una capa de puntos podemos utilizar el tamaño como caracteristica de representacion de los valores de sus atributos. Para ello:
+
+* Abrimos las Propiedades de la capa con clic derecho sobre ella o doble clic sobre la misma.
+* Seleccionamos la propiedad "Simbología"
+* Tipo de clasificación "Graduado"
+* en Valor elegimos el atributo a representar
+* Método "Tamaño"
+* Clasificar
+
+  ![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/6afe15be-6078-4705-853c-2d31b6e69c70)
+
+deberiamos ver algo así:
+
+![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/a65aaafd-81c7-4754-9a44-12ac819f1a85)
+
+### Mapa de Calor
+Otra representación muy conocida son los Mapas de Calor, los que ayudan a evidenciar la distribución de la información sobre el territorio. Para ello:
+
+* Abrimos las Propiedades de la capa con clic derecho sobre ella o doble clic sobre la misma.
+* Seleccionamos la propiedad "Simbología"
+* Tipo de clasificación "Mapa de calor"
+* Podemos elegir una "Rampa de color" y Valor de Radio si es significativo según el comportammiento de nuestros datos.
+* en Ponderar puntos podemos elegimos el atributo que va a dar valor a cada objeto sobre los demás
+* Aceptar
+
+  ![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/96b2841a-cd86-48a6-812d-86dc1336f019)
+
+deberiamos ver algo así:
+
+![image](https://github.com/russorl/capacitacion-SIG/assets/6954564/86767a31-1857-4640-8240-d837a60ec3f3)
+
+# Complementos
+
+continuará....
 
 
+
+  
 
 
 
