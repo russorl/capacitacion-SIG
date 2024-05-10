@@ -14,6 +14,6 @@
 
   Volvemos sin falta el viernes 17/05 con nuevos temas.
 
-Desde ya pido disculpas y los aliento a intentarlo
-Saludos
+Desde ya pido disculpas y los aliento a intentarlo. 
+Saludos. 
 Lucas
